@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="event.css">
+  <title>Event Search and Filters</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Event Search and Filters</h2>
+    <div class="filters">
+      <div class="filter-group">
+        <label for="dateFilter">Date:</label>
+        <input type="date" id="dateFilter" name="dateFilter">
+      </div>
+      <div class="filter-group">
+        <label for="categoryFilter">Category:</label>
+        <select id="categoryFilter" name="categoryFilter">
+          <option value="">Select a category</option>
+          <option value="music">Music</option>
+          <option value="sports">Sports</option>
+          <option value="food">Food</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="locationFilter">Location:</label>
+        <input type="text" id="locationFilter" name="locationFilter">
+      </div>
+      <button id="searchButton">Search</button>
+    </div>
+    <div class="search-results">
+      <!-- Search results will be dynamically generated here -->
+    </div>
+  </div>
+</body>
+</html>

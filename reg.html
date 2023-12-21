@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="event.css">
+  <title>Create Event</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Create Event</h2>
+    <form id="createForm" action="create-event.php" method="post">
+      <div class="input-group">
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName" required>
+      </div>
+      <div class="input-group">
+        <label for="eventDate">Date:</label>
+        <input type="date" id="eventDate" name="eventDate" required>
+      </div>
+      <div class="input-group">
+        <label for="eventTime">Time:</label>
+        <input type="time" id="eventTime" name="eventTime" required>
+      </div>
+      <div class="input-group">
+        <label for="eventLocation">Location:</label>
+        <input type="text" id="eventLocation" name="eventLocation" required>
+      </div>
+      <div class="input-group">
+        <label for="eventDescription">Description:</label>
+        <textarea id="eventDescription" name="eventDescription" rows="4" required></textarea>
+      </div>
+      <div class="input-group">
+        <label for="eventCategory">Category:</label>
+        <select id="eventCategory" name="eventCategory" required>
+          <option value="">Select a category</option>
+          <option value="music">Music</option>
+          <option value="sports">Sports</option>
+          <option value="food">Food</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="eventVisibility">Visibility:</label>
+        <select id="eventVisibility" name="eventVisibility" required>
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+        </select>
+      </div>
+      <button type="submit">Create Event</button>
+    </form>
+  </div>
+</body>
+</html>

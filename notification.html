@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="event.css">
+  <title>Notifications Settings</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Notifications Settings</h2>
+    <form id="notificationsForm" action="save-notifications.php" method="post">
+      <div class="input-group">
+        <input type="checkbox" id="emailNotifications" name="emailNotifications">
+        <label for="emailNotifications">Email Notifications</label>
+      </div>
+      <div class="input-group">
+        <input type="checkbox" id="smsNotifications" name="smsNotifications">
+        <label for="smsNotifications">SMS Notifications</label>
+      </div>
+      <button type="submit">Save Settings</button>
+    </form>
+  </div>
+</body>
+</html>
